@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Openclaw Ollama Setup</title>
+    <meta
+      name="description"
+      content="Openclaw Ollama Setup guide from beginner to advanced with bilingual Burmese and English support"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="top-nav glass animate-fade-up">
+      <div class="brand">Openclaw Ollama Setup</div>
+      <button id="lang-toggle" class="toggle-btn" aria-label="Switch language">မြန်မာ</button>
+    </header>
+
+    <main>
+      <section class="hero animate-fade-up" data-delay="0.1">
+        <p class="pill" data-i18n="guideLabel">Beginner to Advanced + Mega Cheatsheet</p>
+        <h1 data-i18n="heroTitle">Deploy Local AI Power with Openclaw + Ollama</h1>
+        <p class="hero-text" data-i18n="heroDescription">
+          A practical roadmap from first install to production-ready automation with security, memory, and multi-agent workflow.
+        </p>
+      </section>
+
+      <section class="grid cards">
+        <article class="card animate-fade-up" data-delay="0.2">
+          <h2 data-i18n="beginnerTitle">Level 1 — Beginner</h2>
+          <p data-i18n="beginnerDesc">Install Ollama, pull your first model, and run prompts in minutes.</p>
+          <ul>
+            <li data-i18n="beginnerItem1">Install Openclaw globally + run onboarding</li>
+            <li data-i18n="beginnerItem2">Connect first channel and launch gateway</li>
+            <li data-i18n="beginnerItem3">Run llama3 / mistral locally via Ollama</li>
+          </ul>
+        </article>
+
+        <article class="card animate-fade-up" data-delay="0.3">
+          <h2 data-i18n="intermediateTitle">Level 2 — Intermediate</h2>
+          <p data-i18n="intermediateDesc">Optimize speed, memory, and prompt quality for real projects.</p>
+          <ul>
+            <li data-i18n="intermediateItem1">Use <code>openclaw status --all --deep</code> diagnostics</li>
+            <li data-i18n="intermediateItem2">Set model fallbacks + auth providers</li>
+            <li data-i18n="intermediateItem3">Use memory index/search for better context recall</li>
+          </ul>
+        </article>
+
+        <article class="card animate-fade-up" data-delay="0.4">
+          <h2 data-i18n="advancedTitle">Level 3 — Advanced</h2>
+          <p data-i18n="advancedDesc">Build robust local AI systems with automation and integrations.</p>
+          <ul>
+            <li data-i18n="advancedItem1">Automate recurring tasks with <code>openclaw cron</code></li>
+            <li data-i18n="advancedItem2">Orchestrate flows + subagents for scale</li>
+            <li data-i18n="advancedItem3">Harden with <code>openclaw security audit --fix</code></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="glass cheatsheet animate-fade-up" data-delay="0.5">
+        <h2 data-i18n="cheatTitle">Mega Cheatsheet Highlights</h2>
+        <p data-i18n="cheatDesc">Fast commands extracted from the Openclaw print cheatsheet (updated Apr 6, 2026).</p>
+        <div class="command-grid">
+          <article class="command-card">
+            <h3 data-i18n="cmdSetupTitle">Quick Setup</h3>
+            <pre><code>npm install -g openclaw@latest
+openclaw onboard --install-daemon
+openclaw gateway --port 18789</code></pre>
+          </article>
+          <article class="command-card">
+            <h3 data-i18n="cmdHealthTitle">Health & Diagnostics</h3>
+            <pre><code>openclaw doctor --deep --yes
+openclaw status --all --deep
+openclaw channels status --probe</code></pre>
+          </article>
+          <article class="command-card">
+            <h3 data-i18n="cmdPowerTitle">Power Workflow</h3>
+            <pre><code>openclaw memory index --all
+openclaw flows list
+openclaw plugins install --force</code></pre>
+          </article>
+        </div>
+        <a class="external-link" href="https://openclawcheatsheet.com/print" target="_blank" rel="noreferrer" data-i18n="cheatCta">Open full printable cheatsheet ↗</a>
+      </section>
+
+      <section class="developer glass animate-fade-up" data-delay="0.6">
+        <h2 data-i18n="devTitle">Developer Information</h2>
+        <p data-i18n="devName">Created by: Isaac Talb</p>
+        <p data-i18n="devService">Full-stack development, VPS maintenance, custom AI workflow integration, and Openclaw/Ollama setup services.</p>
+        <div class="contact">
+          <a href="https://isaac.duckcloud.info" target="_blank" rel="noreferrer" data-i18n="portfolioLink">Portfolio Website</a>
+          <a href="https://isaac.duckcloud.info/contact" target="_blank" rel="noreferrer" data-i18n="contactLink">Contact Page</a>
+          <a href="https://github.com/IsaacTalb" target="_blank" rel="noreferrer">GitHub @IsaacTalb</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
